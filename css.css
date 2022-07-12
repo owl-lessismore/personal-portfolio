@@ -9,7 +9,6 @@ body {
     font-family: 'Roboto', sans-serif;
     max-width: 1300px;
     margin: 0 auto;
-    /* font-size: calc(.25em + 1vw); */
 }
 
 nav {
@@ -20,6 +19,7 @@ nav {
     padding: 0 1em;
     box-shadow: 0px 10px 12px #7FD1AE;
     position: sticky;
+    top:0;
     z-index: 2;
 }
 
@@ -91,11 +91,9 @@ ul .navbar-links-cta a:hover::after {
 }
 
 .home-page-section {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
-    height: calc(100vh - 20vh);
-    font-size: calc(.25em + 1vw);
-    padding: 25vh 5rem; 
+    padding: 20vh 3rem; 
     display: flex;
     flex-direction: column;
 }
@@ -110,6 +108,7 @@ ul .navbar-links-cta a:hover::after {
 .home-page-section .description {
     padding: 5rem 0;
     text-align: end;
+    font-size: 22px;
 }
 
 .home-page-section .description .change-text {
@@ -118,8 +117,29 @@ ul .navbar-links-cta a:hover::after {
 }
 
 .home-page-section .social-links {
-    font-size: 32px;
+    font-size: 28px;
     gap: 10px;
     display: flex;
     flex-direction: column;
+}
+
+
+@media only screen and (max-width: 640px) {
+    .home-page-section .name {
+        font-size: 48px;
+    }
+    .home-page-section .description {
+        text-align: start;
+        font-size: 18px;
+    }
+    .home-page-section .social-links {
+        font-size: 22px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-links {
+        display: none;
+    }
 }
