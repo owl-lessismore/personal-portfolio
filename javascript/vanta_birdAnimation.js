@@ -1,4 +1,4 @@
-let animationContainer = document.querySelector("#home-page-animation");
+const animationContainer = document.querySelector("#home-page-animation")
 
 VANTA.BIRDS({
 el: animationContainer,
@@ -16,4 +16,4 @@ colorMode: "lerp",
 birdSize: 1.70,
 speedLimit: 8.00,
 quantity: 3.00
-});
+})
