@@ -14,6 +14,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: #f8f8f8;
+    padding: 0 1em;
 }
 
 .navbar-logo img {
@@ -32,14 +33,53 @@ nav {
 
 .navbar-links li a {
     text-decoration: none;
-    /* color: #000; */
-    /* color: #43655A; */
-    /* color: #608180; */
-    color: #3A3A3A;
+    color: #000;
     padding: 1rem;
+    font-weight: 350;
+    letter-spacing: 2.5px;
+    position: relative;
     display: block;
 }
 
-.navbar-links li:hover {
-    background-color: lightgreen;
+.navbar-links li a::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    height: 2px;
+    width: 0;
+    background-color: #8083FF;
+    transition: 0.4s ease-out;
+}
+
+.navbar-links li a:hover::after {
+    left: 0;
+    width: 100%;
+}
+
+.navbar-links li a:hover {
+    color: #7FD1AE;
+}
+
+.navbar-links-cta {
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #89DC84;
+    background-color: #7FD1AE;
+}
+
+ul .navbar-links-cta a {
+    color: #fff;
+}
+
+.navbar-links-cta:hover {
+    background-color: #fff;
+
+}
+
+ul .navbar-links-cta a:hover {
+    color: #000;
+}
+
+ul .navbar-links-cta a:hover::after {
+    width: 0;
 }
