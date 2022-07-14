@@ -1,7 +1,38 @@
+:root {
+    --clr-primary-400:  #303546;
+    --clr-secondary-400: #7e9880;
+
+    --clr-accent-400: #7FD1AE;
+    --clr-accent-500: #f8f8f8;
+
+    --clr-neutral-400: #f0cdcd;
+
+
+    --fw-lighter: 100;
+    --fw-regular: 400;
+    --fw-semi-bold: 500;
+    --fw-bold: 700;
+
+    
+
+    --fs-400: .75rem;
+    --fs-500: 1rem;
+    --fs-600: 1.5rem;
+    --fs-700: 2rem;
+    --fs-800: 3rem;
+    --fs-900: 5rem;
+
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -16,16 +47,19 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: #f8f8f8;
-    padding: 0 1em;
-    box-shadow: 0px 10px 12px #7FD1AE;
+    padding: 1em;
+    box-shadow: 0px 1px 12px var(--clr-accent-400);
     position: sticky;
     top:0;
     z-index: 2;
 }
 
+li {
+    list-style-type: none;
+}
+
 .navbar-logo img {
-    height: 125px;
-    padding: 1em;
+    max-width: 150px;
 }
 
 .navbar-links ul {
@@ -33,15 +67,11 @@ nav {
     gap: 10px;
 }
 
-.navbar-links li {
-    list-style: none;
-}
-
 .navbar-links li a {
     text-decoration: none;
-    color: #000;
+    color: var(--clr-primary-400);
     padding: 1em;
-    font-weight: 350;
+    font-weight: var(--fw-regular);
     letter-spacing: 2.5px;
     position: relative;
     display: block;
@@ -54,7 +84,7 @@ nav {
     left: 50%;
     height: 2px;
     width: 0;
-    background-color: #7FD1AE;
+    background-color: var(--clr-accent-400);
     transition: 0.4s ease-out;
 }
 
@@ -64,13 +94,13 @@ nav {
 }
 
 .navbar-links li a:hover {
-    color: #7e9880;
+    color: var(--clr-secondary-400);
 }
 
 .navbar-links-cta {
     border-radius: 5px;
-    box-shadow: 1px 1px 5px #7FD1AE;
-    background-color: #7e9880;
+    box-shadow: 1px 1px 5px var(--clr-accent-400);
+    background-color: var(--clr-secondary-400);
 }
 
 ul .navbar-links-cta a {
@@ -79,53 +109,55 @@ ul .navbar-links-cta a {
 
 .navbar-links-cta:hover {
     background-color: #fff;
-
 }
 
 ul .navbar-links-cta a:hover {
-    color: #000;
+    color: var(--clr-primary-400);
 }
 
 ul .navbar-links-cta a:hover::after {
     width: 0;
 }
 
-.home-page-section {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20vh 3em; 
-    display: flex;
-    flex-direction: column;
+.home-page {
+    text-align: center;
+    padding: 60px 0;
 }
 
-.home-page-section .name {
+.home-page .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40vh;
+}
+
+.home-page .header .name {
     color: #fff;
-    font-size: 5em;
-    font-weight: 400;
+    font-size: clamp(var(--fs-700), var(--fs-500) + 8vw, var(--fs-900));
+    font-weight: var(--fw-semi-bold);
     letter-spacing: 3px;
 }
 
-.home-page-section .description {
-    padding: 5rem 0;
-    text-align: end;
-    font-size: 1.5em;
+.home-page .header .description {
+    padding-top: 10px;
+    margin-bottom: 80px;
+    font-size: clamp(var(--fs-500), var(--fs-400) + 1vw, var(--fs-700));
 }
 
-.home-page-section .description .change-text {
+.home-page .header .description .change-text {
     letter-spacing: 5px;
-    color: #f0cdcd;
+    color: var(--clr-neutral-400);
 }
 
-.home-page-section .social-links {
-    font-size: 2em;
+.social-links {
     display: flex;
     gap: 30px;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    justify-content: center;
 }
 
 .social-links span {
-    min-width: 200px;
     position: relative;
 }
 
@@ -134,7 +166,6 @@ ul .navbar-links-cta a:hover::after {
     background-color: #303546;
     border-radius: 5px;
     box-shadow: 1px 2px 1px #f8f8f8;
-    display: block;
     font-weight: 100;
     color: #fff;
     letter-spacing: 2px;
@@ -149,29 +180,13 @@ ul .navbar-links-cta a:hover::after {
 
 .social-links span .fa-external-link {
     position: absolute;
-    right: -8px;
-    bottom: 40px;
-    font-size: 1.5rem;
+    bottom: 15px;
 }
 
-
-/* small screen */
-@media only screen and (max-width: 640px) {
-    .home-page-section .name {
-        font-size: 3rem;
-    }
-    .home-page-section .description {
-        text-align: start;
-        font-size: 1rem;
-    }
-    .home-page-section .social-links {
-        font-size: 1.25rem;
-    }
-}
-
-/* medium screen */
-@media only screen and (max-width: 768px) {
+@media (max-width: 767px) {
     .navbar-links {
         display: none;
     }
 }
+
+
