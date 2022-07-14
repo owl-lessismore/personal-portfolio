@@ -35,7 +35,12 @@ Build from scratch. To review the fundamentals of building the web application.
 ```
 
 ## Installation
+```
+git clone https://github.com/owl-lessismore/personal-portfolio-vanillajs.git
+```
+
 Visual Studio Code - https://code.visualstudio.com/
+
 Git - https://git-scm.com/
 
 Host Provider - https://vercel.com/
