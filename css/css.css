@@ -230,6 +230,17 @@ ul .navbar-links-cta a:hover::after {
     opacity: 0.6;
 }
 
+.skills-slider {
+    max-width: 450px;
+    background-color: #f0cdcd;
+}
+
+.slider-item {
+    background-color: #f0cdcd;
+}
+
+
+
 
 @media (max-width: 767px) {
     .navbar-links {
