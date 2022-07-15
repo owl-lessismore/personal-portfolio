@@ -32,7 +32,8 @@
     margin: 0;
 }
 
-body {
+body,
+html {
     scroll-behavior: smooth;
     font-family: 'Roboto', sans-serif;
     max-width: 1500px;
@@ -151,6 +152,7 @@ ul .navbar-links-cta a:hover::after {
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 1rem;
 }
 
 .social-links span {
@@ -185,4 +187,13 @@ ul .navbar-links-cta a:hover::after {
     }
 }
 
+.skill-page,
+.project-page{
+    position: relative;
+}
 
+#skills,
+#projects {
+    position: absolute;
+    top:-150px;
+}
