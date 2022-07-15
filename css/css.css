@@ -182,27 +182,6 @@ ul .navbar-links-cta a:hover::after {
 }
 
 
-@media (max-width: 767px) {
-    .navbar-links {
-        display: none;
-    }
-    .skill-section {
-        flex-direction: column;
-    }
-}
-
-.skill-page,
-.project-page{
-    position: relative;
-}
-
-#skills,
-#projects {
-    position: absolute;
-    top:-150px;
-}
-
-
 .skill-page {
     padding: 1rem 0;
     background-color: var(--clr-accent-500);
@@ -250,3 +229,25 @@ ul .navbar-links-cta a:hover::after {
 .burger-container img:hover {
     opacity: 0.6;
 }
+
+
+@media (max-width: 767px) {
+    .navbar-links {
+        display: none;
+    }
+    .skill-section {
+        flex-direction: column;
+    }
+}
+
+.skill-page,
+.project-page{
+    position: relative;
+}
+
+#skills,
+#projects {
+    position: absolute;
+    top:-150px;
+}
+
