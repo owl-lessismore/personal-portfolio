@@ -126,7 +126,7 @@ ul .navbar-links-cta a:hover::after {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 60vh;
+    height: 40vh;
 }
 
 .home-page .header .name {
