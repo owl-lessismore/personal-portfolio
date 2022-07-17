@@ -5,12 +5,10 @@ const burgerBottom = document.querySelector('[data-burger-bottom]')
 let skillsCarousel = tns({
     "container": ".skills-slider",
     "items": 1,
-    "loop": false,
     "speed": 400,
     "nav": false,
     "controls": false,
-    "mouseDrag": true,
-    "autoWidth": true
+    "mouseDrag": true
 })
 
 burgerTop.addEventListener('click', () => {
@@ -18,7 +16,7 @@ burgerTop.addEventListener('click', () => {
 
     if(burgerTop.classList.contains('burger-top')) {
         burgerTop.setAttribute('src','/assets/burgerColoredTop.png')
-        skillsCarousel.goTo(0)
+        skillsCarousel.goTo(1)
     } else {
         burgerTop.setAttribute('src','/assets/burgerDrawingTop.png')
         skillsCarousel.goTo(0)
@@ -30,10 +28,10 @@ burgerMiddle.addEventListener('click', () => {
 
     if(burgerMiddle.classList.contains('burger-middle')) {
         burgerMiddle.setAttribute('src','/assets/burgerColoredMiddle.png')
-        skillsCarousel.goTo(1)  
+        skillsCarousel.goTo(2)  
     } else {
         burgerMiddle.setAttribute('src','/assets/burgerDrawingMiddle.png')  
-        skillsCarousel.goTo(1)
+        skillsCarousel.goTo(0)
     }
 })
 
@@ -42,10 +40,10 @@ burgerBottom.addEventListener('click', () => {
     
     if(burgerBottom.classList.contains('burger-bottom')) {
         burgerBottom.setAttribute('src','/assets/burgerColoredBottom.png')
-        skillsCarousel.goTo(2)
+        skillsCarousel.goTo(3)
     } else {
         burgerBottom.setAttribute('src','/assets/burgerDrawingBottom.png') 
-        skillsCarousel.goTo(2)  
+        skillsCarousel.goTo(0)  
     }
 })
 

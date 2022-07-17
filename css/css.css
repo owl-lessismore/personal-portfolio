@@ -221,26 +221,42 @@ ul .navbar-links-cta a:hover::after {
 .burger-container img {
     display: block;
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
     box-shadow: 1px 10px 10px var(--clr-neutral-400);  
     cursor: pointer;
 }
 
 .burger-container img:hover {
-    opacity: 0.6;
+    transform: scale(1.05);
 }
 
-.skills-slider {
-    max-width: 450px;
-    background-color: #f0cdcd;
+.skill-section {
+    display: flex;
+    align-items: center;
+}
+
+.skills-carousel {
+    max-width: 350px;
+    margin-right: 1rem;
 }
 
 .slider-item {
-    background-color: #f0cdcd;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px var(--clr-neutral-400); 
+    margin: 1rem 0;
 }
 
+.technology-container {
+    display: flex;
+    text-align: left;
+}
 
-
+.technology-container ul li {
+    padding: .5rem;
+    line-height: 1.5rem;
+}
 
 @media (max-width: 767px) {
     .navbar-links {
@@ -248,7 +264,13 @@ ul .navbar-links-cta a:hover::after {
     }
     .skill-section {
         flex-direction: column;
+        justify-content: center;
     }
+    .skills-carousel {
+        max-width: 300px;
+        margin: 0;
+    }
+
 }
 
 .skill-page,
