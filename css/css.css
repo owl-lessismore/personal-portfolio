@@ -374,7 +374,6 @@ ul .navbar-links-cta a:hover::after {
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
     font-size: clamp(var(--fs-500),var(--fs-600) + .2vw, var(--fs-800));
-
 }
 
 .about-work p,
@@ -384,6 +383,77 @@ ul .navbar-links-cta a:hover::after {
     font-size: clamp(var(--fs-400),var(--fs-500) + .2vw, var(--fs-600));
 
 }
+
+.contact-page {
+    background-color: var(--clr-secondary-400);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.contact-page h2 {
+    font-size: clamp(var(--fs-600),var(--fs-700) + 1vw, var(--fs-800));
+    font-weight: var(--fw-regular);
+    color: #fff;
+}
+
+
+.contact-container form{
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 767px;
+    margin: 0 auto;
+    padding: 1rem;
+    
+}
+
+.contact-container input {
+    padding: 1rem;
+    background-color: var(--clr-accent-500);
+    outline: none;
+    border: 1px solid var(--clr-primary-400);
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px var(--clr-primary-400);
+    
+}
+
+.contact-container form textarea {
+    height: 150px;
+    padding: 1rem;
+    background-color: var(--clr-accent-500);
+    outline: none;
+    border: 1px solid var(--clr-primary-400);
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px var(--clr-primary-400);
+}
+
+.submit-contact-button {
+    /* text-decoration: none;
+    padding: 1rem;
+    background-color: var(--clr-primary-400);
+    color: #fff;
+    box-shadow: 1px 1px 3px var(--clr-accent-400);
+    border-radius: 5px; */
+    text-decoration: none;
+    background-color: var(--clr-primary-400);
+    border-radius: 5px;
+    box-shadow: 1px 2px 1px var(--clr-accent-500);
+    font-weight: var(--fw-lighter);
+    color: #fff;
+    letter-spacing: 2px;
+    padding: .5rem;
+}
+
+.submit-contact-button:hover {
+    background-color: var(--clr-accent-500);
+    color: var(--clr-primary-400);
+    box-shadow: 1px 2px 1px var(--clr-primary-400);
+    cursor: pointer;
+}
+
 
 @media (max-width: 767px) {
     .navbar-links {
