@@ -188,7 +188,8 @@ ul .navbar-links-cta a:hover::after {
     text-align: center;
 }
 
-.skill-page h2 {
+.skill-page h2,
+.project-page h2 {
     font-size: clamp(var(--fs-600),var(--fs-700) + 1vw, var(--fs-800));
     font-weight: var(--fw-regular);
     color: var(--clr-primary-400);
@@ -290,6 +291,50 @@ ul .navbar-links-cta a:hover::after {
     background-color: #fff;
 }
 
+.project-page {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.project-container {
+   background-color: var(--clr-accent-500);
+   margin: 1rem;
+   padding: 1rem;
+   border-radius: 5px;
+   display: flex;
+   justify-content: space-evenly;
+   box-shadow: 1px 1px 5px var(--clr-primary-400);
+  
+}
+
+.project-container:hover {
+    transform: scale(1.01);
+}
+
+.project-left {
+    text-align: left;
+    flex-grow: 2;
+}
+
+
+.project-technology-use {
+    display: flex;
+}
+
+.project-technology-left,
+.project-technology-right {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.project-redirect {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+
 @media (max-width: 767px) {
     .navbar-links {
         display: none;
@@ -301,6 +346,9 @@ ul .navbar-links-cta a:hover::after {
     .skills-carousel {
         max-width: 300px;
         margin: 0;
+    }
+    .project-container {
+        flex-direction: column;
     }
 
 }
