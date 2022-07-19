@@ -189,7 +189,8 @@ ul .navbar-links-cta a:hover::after {
 }
 
 .skill-page h2,
-.project-page h2 {
+.project-page h2,
+.about-page h2 {
     font-size: clamp(var(--fs-600),var(--fs-700) + 1vw, var(--fs-800));
     font-weight: var(--fw-regular);
     color: var(--clr-primary-400);
@@ -339,6 +340,50 @@ ul .navbar-links-cta a:hover::after {
     gap: 50px;
 }
 
+.about-page {
+    text-align: center;
+    background-color: var(--clr-accent-500);
+    padding: 2rem 0;
+}
+
+.about-container {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-work,
+.about-personal,
+.about-coding {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px var(--clr-neutral-400);
+}
+
+.about-work h3,
+.about-personal h3,
+.about-coding h3 {
+    background-size: 100%;
+    background-color: #182b3a;
+    background-image: linear-gradient(315deg, #182b3a 0%, #20a4f3 74%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-size: clamp(var(--fs-500),var(--fs-600) + .2vw, var(--fs-800));
+
+}
+
+.about-work p,
+.about-personal p,
+.about-coding p {
+    padding: 1rem;
+    font-size: clamp(var(--fs-400),var(--fs-500) + .2vw, var(--fs-600));
+
+}
 
 @media (max-width: 767px) {
     .navbar-links {
