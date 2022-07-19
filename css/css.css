@@ -454,6 +454,24 @@ ul .navbar-links-cta a:hover::after {
     cursor: pointer;
 }
 
+.footer-page {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: var(--clr-accent-500);
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+}
+
+.footer-socials p:hover {
+    cursor: pointer;
+    color: var(--clr-secondary-400);
+}
 
 @media (max-width: 767px) {
     .navbar-links {
