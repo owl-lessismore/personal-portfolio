@@ -431,12 +431,6 @@ ul .navbar-links-cta a:hover::after {
 }
 
 .submit-contact-button {
-    /* text-decoration: none;
-    padding: 1rem;
-    background-color: var(--clr-primary-400);
-    color: #fff;
-    box-shadow: 1px 1px 3px var(--clr-accent-400);
-    border-radius: 5px; */
     text-decoration: none;
     background-color: var(--clr-primary-400);
     border-radius: 5px;
@@ -468,7 +462,12 @@ ul .navbar-links-cta a:hover::after {
     letter-spacing: 3px;
 }
 
-.footer-socials p:hover {
+.footer-socials a {
+    text-decoration: none;
+    color: var(--clr-primary-400)
+}
+
+.footer-socials a:hover {
     cursor: pointer;
     color: var(--clr-secondary-400);
 }
@@ -492,12 +491,17 @@ ul .navbar-links-cta a:hover::after {
 }
 
 .skill-page,
-.project-page{
+.project-page,
+.about-page,
+.contact-page
+{
     position: relative;
 }
 
 #skills,
-#projects {
+#projects,
+#about,
+#contact {
     position: absolute;
     top:-150px;
 }
