@@ -316,6 +316,11 @@ ul .navbar-links-cta a:hover::after {
     flex-grow: 2;
 }
 
+.project-right img {
+    display: block;
+    max-width: 767px;
+    width: 100%;
+}
 
 .project-technology-use {
     display: flex;
