@@ -183,7 +183,7 @@ ul .navbar-links-cta a:hover::after {
 
 
 .skill-page {
-    padding: 1rem 0;
+    padding: 2rem 0;
     background-color: var(--clr-accent-500);
     text-align: center;
 }
@@ -197,6 +197,7 @@ ul .navbar-links-cta a:hover::after {
 .skill-section {
     display: flex;
     justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .skill-section p {
@@ -275,6 +276,19 @@ ul .navbar-links-cta a:hover::after {
     padding: .5rem;
 }
 
+.build-button-cta {
+    text-decoration: none;
+    padding: 1rem;
+    background-color: var(--clr-secondary-400);
+    color: #fff;
+    box-shadow: 1px 1px 3px var(--clr-accent-400);
+    border-radius: 5px;
+}
+
+.build-button-cta:hover {
+    color: var(--clr-primary-400);
+    background-color: #fff;
+}
 
 @media (max-width: 767px) {
     .navbar-links {
