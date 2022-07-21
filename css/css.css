@@ -305,7 +305,6 @@ ul .navbar-links-cta a:hover::after {
    padding: 1rem;
    border-radius: 5px;
    display: flex;
-   align-items: center;
    box-shadow: 1px 1px 5px var(--clr-primary-400);
    
 }
