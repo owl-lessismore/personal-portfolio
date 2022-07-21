@@ -305,9 +305,9 @@ ul .navbar-links-cta a:hover::after {
    padding: 1rem;
    border-radius: 5px;
    display: flex;
-   justify-content: space-evenly;
+   align-items: center;
    box-shadow: 1px 1px 5px var(--clr-primary-400);
-  
+   
 }
 
 .project-container:hover {
@@ -329,18 +329,34 @@ ul .navbar-links-cta a:hover::after {
     display: flex;
 }
 
+.project-left h3,
+.project-left p {
+    padding: .25rem;
+}
+
 .project-technology-left,
 .project-technology-right {
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    margin-left: 1rem;
+}
+
+
+.project-technology-left li,
+.project-technology-right li{
+    padding: 1rem;
+    list-style: square;
 }
 
 .project-redirect {
     display: flex;
     justify-content: center;
     gap: 50px;
+    padding: 1rem;
 }
+
+
 
 .about-page {
     text-align: center;
