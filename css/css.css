@@ -306,11 +306,6 @@ ul .navbar-links-cta a:hover::after {
    border-radius: 5px;
    display: flex;
    box-shadow: 1px 1px 5px var(--clr-primary-400);
-   
-}
-
-.project-container:hover {
-    transform: scale(1.01);
 }
 
 .project-left {

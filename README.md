@@ -21,7 +21,8 @@ Build from scratch. To review the fundamentals of building the web application.
             'GoogleFont-API'
             'Fontawesome-Icons',
             'Typejs-TypingAnimations',
-            'Vantajs-FlyingBirdAnimations'
+            'Vantajs-FlyingBirdAnimations',
+            'Formspree'
         ]
     }    
 }
@@ -56,6 +57,7 @@ All are all imported in header html ie: CDN-https://cdnjs.com/libraries
 
 > https://mattboldt.com/demos/typed-js/
 
+> https://formspree.io/
 
 ## Folder Structure
 ![folderStructure!](/assets/folderStructure.png)
